@@ -3,25 +3,24 @@ package com.boobalan.grokking.coding.twoPointers
 import kotlin.math.max
 
 fun main(args: Array<String>) {
-    var input = intArrayOf(2,3,3,3,6,9,9)
+    var input = intArrayOf(2,2,2,11)
     var p1 = 0
     var p2 = 0
 
     while (p2 < input.size) {
-        var prevP2 = p2
+        var temp = input[p2]
 
         do {
+            var value = input[p2]
+            input[p2] = 0
             p2++
-        } while (p2 < input.size && input[p2-1] == input[p2])
+        } while (p2 < input.size && value == input[p2])
 
-        input[p1] = input[prevP2]
+        input[p1++] = temp;
 
-        for (i in max(p1 +1, prevP2) until p2) {
-            input[i] = 0
-        }
 
-        p1++
     }
+
 
     println(input.contentToString())
 }
