@@ -1,6 +1,5 @@
 package com.boobalan.grokking.coding.sliding
 
-import java.util.SortedMap
 import java.util.TreeMap
 
 fun main(args: Array<String>) {
@@ -61,7 +60,7 @@ fun checkInclusion(s1: String, s2: String): Boolean {
     } catch (_: StringIndexOutOfBoundsException) {
     }
 
-//    println("$patternfound: from $outputWindowElementStart to $outputWindowElementEnd")
+    println("$patternfound: from $outputWindowElementStart to $outputWindowElementEnd")
 
     return patternfound
 }
