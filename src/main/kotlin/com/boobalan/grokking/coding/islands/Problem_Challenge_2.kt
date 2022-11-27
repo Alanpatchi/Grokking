@@ -31,7 +31,7 @@ fun main(args: Array<String>) {
     println(distinctTraversal.size)
 }
 
-fun traverseIsland(input: Array<IntArray>, i: Int, j: Int, distinctTraversal: MutableSet<String>){
+private fun traverseIsland(input: Array<IntArray>, i: Int, j: Int, distinctTraversal: MutableSet<String>){
 
     val visitQueue: Queue<IntArray> = LinkedList()
     visitQueue.add(intArrayOf(i, j))
