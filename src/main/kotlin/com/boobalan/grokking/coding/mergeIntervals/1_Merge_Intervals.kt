@@ -3,13 +3,6 @@ package com.boobalan.grokking.coding.mergeIntervals
 import java.util.*
 
 class Interval(var start: Int, var end: Int)
-object MergeIntervals {
-
-    fun merge(intervals: List<Interval>): List<Interval> {
-        return intervals
-    }
-
-}
 fun main(args: Array<String>) {
 
     val input: MutableList<Interval> = java.util.ArrayList()
